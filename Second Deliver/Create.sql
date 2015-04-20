@@ -1,19 +1,22 @@
 .mode columns
 .headers on
 .nullvalue NULL
+PRAGMA FOREIGN_KEYS=ON;
 
-DROP TABLE IF EXISTS Pessoa;
-DROP TABLE IF EXISTS Associacao;
-DROP TABLE IF EXISTS Estilo;
-DROP TABLE IF EXISTS Escalao;
-DROP TABLE IF EXISTS Localidade;
-DROP TABLE IF EXISTS Clube;
-DROP TABLE IF EXISTS Atleta;
-DROP TABLE IF EXISTS Treinador;
-DROP TABLE IF EXISTS Piscina;
-DROP TABLE IF EXISTS Competicao;
-DROP TABLE IF EXISTS Prova;
+
 DROP TABLE IF EXISTS Resultado;
+DROP TABLE IF EXISTS Prova;
+DROP TABLE IF EXISTS Competicao;
+DROP TABLE IF EXISTS Piscina;
+DROP TABLE IF EXISTS Treinador;
+DROP TABLE IF EXISTS Atleta;
+DROP TABLE IF EXISTS Clube;
+DROP TABLE IF EXISTS Localidade;
+DROP TABLE IF EXISTS Escalao;
+DROP TABLE IF EXISTS Estilo;
+DROP TABLE IF EXISTS Associacao;
+DROP TABLE IF EXISTS Pessoa;
+
 
 
 CREATE TABLE Pessoa
@@ -86,7 +89,7 @@ CREATE TABLE Piscina
 (
 id TEXT NOT NULL PRIMARY KEY,
 comprimento INTEGER,
-nome TEXT NOT NULL REFERENCES Localidade(nome),
+codigo_postal TEXT REFERENCES Localidade(codigo_postal) NOT NULL,
 regiao TEXT NOT NULL REFERENCES Associacao(regiao)
 );
 
@@ -112,10 +115,9 @@ designacao TEXT NOT NULL REFERENCES Estilo(designacao)
 
 CREATE TABLE Resultado
 (
+resultado_pk INTEGER PRIMARY KEY,
 numero INTEGER REFERENCES Atleta(numero),
-distancia INTEGER REFERENCES Prova(distancia),
-nome TEXT NOT NULL REFERENCES Competicao(nome),
-designacao TEXT NOT NULL REFERENCES Estilo(designacao),
+id INTEGER REFERENCES Prova(id),
 posicao INTEGER,
 tempo INTEGER
 );

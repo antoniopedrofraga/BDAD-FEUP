@@ -83,21 +83,21 @@ INSERT INTO Treinador VALUES(2,2002,2,'CCR Santa Casa');
 
 --Inserir Piscinas
 
-INSERT INTO Piscina VALUES('LX01',50,'Sintra','Lisboa');
-INSERT INTO Piscina VALUES('MDL01',45,'Mirandela','Braganca');
-INSERT INTO Piscina VALUES('CMB',47,'Coimbra','Coimbra');
-INSERT INTO Piscina VALUES('ALG',49,'Faro','Algarve');
-INSERT INTO Piscina VALUES('MTS',50,'Matosinhos','Porto');
-INSERT INTO Piscina VALUES('MDR',50,'Funchal','Funchal');
+INSERT INTO Piscina VALUES('LX01',50,2706,'Lisboa');
+INSERT INTO Piscina VALUES('MDL01',45,5370,'Braganca');
+INSERT INTO Piscina VALUES('CMB',47,3020,'Coimbra');
+INSERT INTO Piscina VALUES('ALG',49,8005,'Algarve');
+INSERT INTO Piscina VALUES('MTS',50,4450,'Porto');
+INSERT INTO Piscina VALUES('MDR',50,9004,'Madeira');
 
 
 --Inserir Competicoes
 
 INSERT INTO Competicao VALUES('Campeonato Nacional','15-12-01','Porto', 'MTS');
-INSERT INTO Competicao VALUES('Torneio de Sintra','15-06-24','Sintra', 'LX01');
+INSERT INTO Competicao VALUES('Torneio de Sintra','15-06-24','Lisboa', 'LX01');
 INSERT INTO Competicao VALUES('Open Internacional da Madeira','15-08-03','Madeira', 'MDR');
-INSERT INTO Competicao VALUES('Torneio de Faro','15-06-15','Faro', 'ALG');
-INSERT INTO Competicao VALUES('Torneio de Mirandela','15-04-19','Mirandela', 'MDL01');
+INSERT INTO Competicao VALUES('Torneio de Faro','15-06-15','Algarve', 'ALG');
+INSERT INTO Competicao VALUES('Torneio de Mirandela','15-04-19','Braganca', 'MDL01');
 INSERT INTO Competicao VALUES('Coimbra Open','15-05-21','Coimbra', 'CMB');
 
 --Inserir Provas
@@ -122,10 +122,10 @@ INSERT INTO Prova VALUES(16,'15-05-21',100, 'Coimbra Open', 'Brucos');
 
 --Inserir Resultados
 
-INSERT INTO Resultado VALUES(4,50, 'Torneio de Mirandela', 'Costas',3, 61); -- tempos em segundos
-INSERT INTO Resultado VALUES(5,100, 'Torneio de Mirandela', 'Brucos',2,97);
-INSERT INTO Resultado VALUES(8,100, 'Coimbra Open', 'Brucos',7,105);
-INSERT INTO Resultado VALUES(6,100, 'Campeonato Nacional', 'Mariposa',8,100);
-INSERT INTO Resultado VALUES(9,50, 'Campeonato Nacional', 'Costas',7,110);
+INSERT INTO Resultado VALUES(1,1000,4,3,61); -- tempos em segundos
+INSERT INTO Resultado VALUES(2,1005,5,2,97);
+INSERT INTO Resultado VALUES(3,1003,8,7,105);
+INSERT INTO Resultado VALUES(4,1006,6,8,100);
+INSERT INTO Resultado VALUES(5,1002,9,7,110);
 
 
