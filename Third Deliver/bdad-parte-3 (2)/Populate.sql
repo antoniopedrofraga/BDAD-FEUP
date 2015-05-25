@@ -5,9 +5,9 @@
 --Inserir alguns exemplos de pessoas
 
 INSERT INTO Pessoa VALUES(1,'Pedro Fraga', 'Rua da FEUP n 23', 'masculino', 'Portuguesa', '1995-08-03'); --Treinador
-INSERT INTO Pessoa VALUES(2,'Filipa Barroso', 'Avenida dos Aliados n 125', 'feminino', 'Portuguesa','2005-01-01'); --Treinador
+INSERT INTO Pessoa VALUES(2,'Filipa Barroso', 'Avenida dos Aliados n 125', 'feminino', 'Portuguesa','1995-07-24'); --Treinador
 INSERT INTO Pessoa VALUES(3,'Francisco Rodrigues', 'Rua do Exemplo n 31', 'masculino', 'Portuguesa','1996-05-03'); --Atleta
-INSERT INTO Pessoa VALUES(4,'José Cordeiro', 'Rua do Carmo n 181', 'masculino', 'Portuguesa','1998-03-01');	--Atleta
+INSERT INTO Pessoa VALUES(4,'Jose Cordeiro', 'Rua do Carmo n 181', 'masculino', 'Portuguesa','1998-03-01');	--Atleta
 INSERT INTO Pessoa VALUES(5,'Susana Manuel', 'Rua das Flores n 11', 'masculino', 'Portuguesa','1999-04-23'); --Atleta
 INSERT INTO Pessoa VALUES(6,'Sonia Rodrigues', 'Rua do Cantinho n 12', 'feminino', 'Portuguesa','2000-12-21'); --Atleta
 INSERT INTO Pessoa VALUES(7,'Ana Maia', 'Rua da Fonte n 15', 'feminino', 'Portuguesa','2001-04-23'); --Atleta
@@ -93,31 +93,31 @@ INSERT INTO Piscina VALUES('MDR',50,9004,'Madeira');
 
 --Inserir Competicoes
 
-INSERT INTO Competicao VALUES('Campeonato Nacional','15-12-01','Porto', 'MTS');
-INSERT INTO Competicao VALUES('Torneio de Sintra','15-06-24','Lisboa', 'LX01');
-INSERT INTO Competicao VALUES('Open Internacional da Madeira','15-08-03','Madeira', 'MDR');
-INSERT INTO Competicao VALUES('Torneio de Faro','15-06-15','Algarve', 'ALG');
-INSERT INTO Competicao VALUES('Torneio de Mirandela','15-04-19','Braganca', 'MDL01');
-INSERT INTO Competicao VALUES('Coimbra Open','15-05-21','Coimbra', 'CMB');
+INSERT INTO Competicao VALUES('Campeonato Nacional','2015-12-01','Porto', 'MTS');
+INSERT INTO Competicao VALUES('Torneio de Sintra','2015-06-24','Lisboa', 'LX01');
+INSERT INTO Competicao VALUES('Open Internacional da Madeira','2015-08-03','Madeira', 'MDR');
+INSERT INTO Competicao VALUES('Torneio de Faro','2015-06-15','Algarve', 'ALG');
+INSERT INTO Competicao VALUES('Torneio de Mirandela','2016-04-19','Braganca', 'MDL01');
+INSERT INTO Competicao VALUES('Coimbra Open','2016-05-21','Coimbra', 'CMB');
 
 --Inserir Provas
 
-INSERT INTO Prova VALUES(1,'15-12-01',100, 'Campeonato Nacional', 'Brucos');
-INSERT INTO Prova VALUES(2,'15-12-01',50, 'Campeonato Nacional', 'Mariposa');
-INSERT INTO Prova VALUES(3,'15-12-02',100, 'Campeonato Nacional', 'Costas');
-INSERT INTO Prova VALUES(4,'15-12-02',50, 'Campeonato Nacional', 'Crawl');
-INSERT INTO Prova VALUES(5,'16-01-05',50, 'Campeonato Nacional', 'Brucos');
-INSERT INTO Prova VALUES(6,'16-01-06',100, 'Campeonato Nacional', 'Mariposa');
-INSERT INTO Prova VALUES(7,'16-01-05',50, 'Campeonato Nacional', 'Costas');
-INSERT INTO Prova VALUES(8,'16-01-06',100, 'Campeonato Nacional', 'Crawl');
-INSERT INTO Prova VALUES(9,'15-06-24',50, 'Torneio de Sintra', 'Crawl');
-INSERT INTO Prova VALUES(10,'15-06-24',100, 'Torneio de Sintra', 'Crawl');
-INSERT INTO Prova VALUES(11,'15-08-03',100, 'Open Internacional da Madeira', 'Mariposa');
-INSERT INTO Prova VALUES(12,'15-06-15',100, 'Torneio de Faro', 'Brucos');
-INSERT INTO Prova VALUES(13,'15-06-16',100, 'Torneio de Faro', 'Mariposa');
-INSERT INTO Prova VALUES(14,'15-04-19',50, 'Torneio de Mirandela', 'Costas');
-INSERT INTO Prova VALUES(15,'15-04-19',100, 'Torneio de Mirandela', 'Brucos');
-INSERT INTO Prova VALUES(16,'15-05-21',100, 'Coimbra Open', 'Brucos');
+INSERT INTO Prova VALUES(1,'2015-12-01',100, 'Campeonato Nacional', 'Brucos');
+INSERT INTO Prova VALUES(2,'2015-12-01',50, 'Campeonato Nacional', 'Mariposa');
+INSERT INTO Prova VALUES(3,'2015-12-02',100, 'Campeonato Nacional', 'Costas');
+INSERT INTO Prova VALUES(4,'2015-12-02',50, 'Campeonato Nacional', 'Crawl');
+INSERT INTO Prova VALUES(5,'2016-01-05',50, 'Campeonato Nacional', 'Brucos');
+INSERT INTO Prova VALUES(6,'2016-01-06',100, 'Campeonato Nacional', 'Mariposa');
+INSERT INTO Prova VALUES(7,'2016-01-05',50, 'Campeonato Nacional', 'Costas');
+INSERT INTO Prova VALUES(8,'2016-01-06',100, 'Campeonato Nacional', 'Crawl');
+INSERT INTO Prova VALUES(9,'2015-06-24',50, 'Torneio de Sintra', 'Crawl');
+INSERT INTO Prova VALUES(10,'2015-06-24',100, 'Torneio de Sintra', 'Crawl');
+INSERT INTO Prova VALUES(11,'2015-08-03',100, 'Open Internacional da Madeira', 'Mariposa');
+INSERT INTO Prova VALUES(12,'2015-06-15',100, 'Torneio de Faro', 'Brucos');
+INSERT INTO Prova VALUES(13,'2015-06-16',100, 'Torneio de Faro', 'Mariposa');
+INSERT INTO Prova VALUES(14,'2016-04-19',50, 'Torneio de Mirandela', 'Costas');
+INSERT INTO Prova VALUES(15,'2016-04-19',100, 'Torneio de Mirandela', 'Brucos');
+INSERT INTO Prova VALUES(16,'2016-05-21',100, 'Coimbra Open', 'Brucos');
 
 
 --Inserir Resultados
@@ -127,5 +127,4 @@ INSERT INTO Resultado VALUES(2,1005,5,2,97);
 INSERT INTO Resultado VALUES(3,1003,8,7,105);
 INSERT INTO Resultado VALUES(4,1006,6,8,100);
 INSERT INTO Resultado VALUES(5,1002,9,7,110);
-
 

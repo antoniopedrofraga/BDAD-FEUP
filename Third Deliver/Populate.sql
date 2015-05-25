@@ -64,6 +64,7 @@ INSERT INTO Clube VALUES('Natacao Sintra', 'Lisboa',2706);
 INSERT INTO Clube VALUES('Faro SC', 'Algarve' ,8005);
 
 
+
 --Inserir alguns atletas
 
 INSERT INTO Atleta VALUES(3,1000, 151, 50, 'GC Vila Real','Senior');  --Mais tarde iremos atualizar o escalao automaticamente
