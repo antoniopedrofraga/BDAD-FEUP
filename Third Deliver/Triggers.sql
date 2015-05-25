@@ -1,15 +1,18 @@
-/*CREATE TRIGGER Atleta_insert
+
+CREATE TRIGGER IF NOT EXISTS Treinador_insert
+BEFORE INSERT ON Treinador
+	WHEN (new.id IN (SELECT id FROM Atleta))
+	BEGIN
+	SELECT RAISE(ABORT, 'Esta pessoa ja e um atleta, nao pode ser treinador');
+	END;
+	
+CREATE TRIGGER IF NOT EXISTS Atleta_insert
 BEFORE INSERT ON Atleta
-  FOR EACH ROW
-  WHEN(((SELECT data_nascimento FROM Pessoa WHERE id = new.id) - time())
-  BEGIN*/
-  
-  
+	WHEN (new.id IN (SELECT id FROM Treinador))
+	BEGIN
+	SELECT RAISE(ABORT, 'Esta pessoa ja e um treinador, nao pode ser atleta');
+	END;
 	
 
-CREATE TRIGGER IF NOT EXISTS Regiao_insert
-BEFORE INSERT ON Clube
-	WHEN (new.regiao NOT IN (SELECT regiao FROM Associacao))
-	BEGIN
-	INSERT INTO Associacao VALUES(new.regiao);
-	END;
+	
+	
