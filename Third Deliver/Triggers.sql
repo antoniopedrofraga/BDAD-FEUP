@@ -12,7 +12,14 @@ BEFORE INSERT ON Atleta
 	BEGIN
 	SELECT RAISE(ABORT, 'Esta pessoa ja e um treinador, nao pode ser atleta');
 	END;
-	
+
+
+CREATE TRIGGER IF NOT EXISTS Competicao_insert
+BEFORE INSERT ON Competicao
+	WHEN ((SELECT date('now')) > new.data)
+	BEGIN
+	SELECT RAISE(ABORT, 'Nao podes adicionar uma competicao numa data anterior a atual');
+	END;
 
 	
 	
