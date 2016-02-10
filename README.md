@@ -1,5 +1,26 @@
-# BDAD-FEUP
-Code developed as FEUP student at BDAD subject
+# Databases
+
+Sqlite3 code developed as FEUP student at BDAD subject.
 
 
-Neste trabalho escolhemos elaborar uma base de dados de auxílio à gestão de competições de natação. Esta base de dados iria facilitar a gestão dos atletas e as suas relações com os clubes, associações e competições, permitindo também instanciar os seus resultados e classificações.
+### LEARNING OUTCOMES
+
+- map the UML class model into the relational model
+
+- use relational algebra to query databases
+
+- design a relational database in the normalized form
+
+- query relational databases in SQL and using a procedural language
+
+- access a database through user interfaces
+
+- use transactions and concurrency that ensure data integrity of a database
+
+- explain the main features of a database management system
+
+
+### Result
+
+
+![](https://raw.githubusercontent.com/pedrofraga/BDAD-FEUP/master/Third%20Deliver/uml.png)
